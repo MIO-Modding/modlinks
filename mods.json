@@ -45,10 +45,10 @@
   {
     "id": "b37ba35b-6e1f-4cd4-b268-76a6d05c2039",
     "titleSlug": "mio-purple",
-    "displayTitle": "MIO Purple",
+    "displayTitle": "Purple Tendrils",
     "authorSlug": "Ilemni",
     "displayAuthor": "Ilemni",
-    "description": "A mod for MIO: Memories in Orbit",
+    "description": "Change the color of Mio's tendrils to purple",
     "versions": {
       "0.1.0": "https://github.com/Ilemni/mio-purple/releases/download/v0.1/mio_purple.dll",
       "0.1.1": "https://github.com/Ilemni/mio-purple/releases/download/v0.1.1/mio_purple.dll"
