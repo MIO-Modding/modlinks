@@ -6,12 +6,12 @@
   "type": "array",
   "items": {
     "type":"object",
-    "required": ["id", "titleSlug", "displayTitle", "authorSlug", "displayAuthor", "description", "versions", "configFiles", "dependencies"],
+    "required": ["id", "titleSlug", "displayTitle", "authorSlug", "displayAuthor", "description", "modDirectoryName", "versions", "dependencies"],
     "additionalProperties": false,
     "properties": {
         "id": {
             "type": "string",
-            "description": "A UUID used for identifying your mod. You can generate one at https://www.uuidgenerator.net/version4"
+            "description": "An identifier for your mod."
         },
         "titleSlug": {
             "type": "string",
@@ -33,6 +33,10 @@
             "type": "string",
             "description": "A description of your mod."
         },
+        "modDirectoryName": {
+            "type": "string",
+            "description": "What you want the install and config directories for your mod to be set to. In most cases, this should be the same as the titleSlug field, but it is up to you."
+        },
         "versions": {
             "type": "object",
             "description": "A list of downloads for your mod, by semantic version.",
@@ -41,7 +45,7 @@
             "patternProperties": {
                 "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$": {
                     "type": "string",
-                    "description": "URL to the .dll download for your mod."
+                    "description": "URL to the .zip download for your mod."
                 }
             }
         },
@@ -54,7 +58,7 @@
         },
         "dependencies": {
             "type": "array",
-            "description": "A list of UUIDs of mods your mod depends on. You don't have to put Modding API.",
+            "description": "A list of the identifiers of mods your mod depends on.",
             "items": {
                 "type": "string"
             }

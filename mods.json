@@ -1,59 +1,34 @@
 [
   {
-    "id": "4aa269de-c271-404a-8d5e-b107fe6e5898",
+    "id": "io.github.mio-modding.mio-modding-api",
     "titleSlug": "mio-modding-api",
     "displayTitle": "Modding API",
     "authorSlug": "MIO-Modding",
     "displayAuthor": "MIO Modding",
-    "description": "Mod loader for MIO: Memories in Orbit",
+    "description": "Modding API for MIO: Memories in Orbit",
+    "modDirectoryName": "modding-api",
     "versions": {
-      "0.0.5": "https://github.com/MIO-Modding/mio-modding-api/releases/download/v0.0.5/winhttp.dll"
+      "0.1.0": "https://github.com/MIO-Modding/mio-modding-api/releases/download/0.1.0/mio-modding-api.zip"
     },
     "configFiles": [],
     "dependencies": []
   },
   {
-    "id": "5fb0423f-5ab2-48c2-9ed1-e636882e4d73",
-    "titleSlug": "mio-noclip-mod",
-    "displayTitle": "No-Clip Mod",
+    "id": "io.github.ilemni.mio-freecam-mod",
+    "titleSlug": "mio-freecam-mod",
+    "displayTitle": "Freecam Mod",
     "authorSlug": "Ilemni",
     "displayAuthor": "Ilemni",
-    "description": "A noclip mod for MIO: Memories in Orbit",
+    "description": "A freecam mod for MIO: Memories in Orbit",
+    "modDirectoryName": "freecam",
     "versions": {
-      "0.2.0": "https://github.com/Ilemni/mio-noclip-mod/releases/download/v0.2/noclip.dll",
-      "0.1.1": "https://github.com/Ilemni/mio-noclip-mod/releases/download/v0.1.1/noclip.dll",
-      "0.1.0": "https://github.com/Ilemni/mio-noclip-mod/releases/download/v0.1/noclip.dll"
+      "1.0.0": "https://github.com/Ilemni/mio-freecam-mod/releases/download/v1.0/freecam-mod.zip"
     },
     "configFiles": [
-        "noclip/keybinds.txt"
+      "keybinds.txt"
     ],
-    "dependencies": []
-  },
-  {
-    "id": "7712fca7-f2c8-423b-b2a8-bf341826070a",
-    "titleSlug": "mio-teleport-mod",
-    "displayTitle": "Teleport Mod",
-    "authorSlug": "CoCoHfl",
-    "displayAuthor": "CoCo",
-    "description": "A teleport mod for MIO",
-    "versions": {
-      "1.0.0": "https://github.com/CocoHfl/mio-teleport-mod/releases/download/v1.0.0/tpmod.dll"
-    },
-    "configFiles": [],
-    "dependencies": []
-  },
-  {
-    "id": "b37ba35b-6e1f-4cd4-b268-76a6d05c2039",
-    "titleSlug": "mio-purple",
-    "displayTitle": "Purple Tendrils",
-    "authorSlug": "Ilemni",
-    "displayAuthor": "Ilemni",
-    "description": "Change the color of Mio's tendrils to purple",
-    "versions": {
-      "0.1.0": "https://github.com/Ilemni/mio-purple/releases/download/v0.1/mio_purple.dll",
-      "0.1.1": "https://github.com/Ilemni/mio-purple/releases/download/v0.1.1/mio_purple.dll"
-    },
-    "configFiles": [],
-    "dependencies": []
+    "dependencies": [
+      "io.github.mio-modding.mio-modding-api"
+    ]
   }
 ]
