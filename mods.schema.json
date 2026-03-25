@@ -45,6 +45,13 @@
                 }
             }
         },
+        "configFiles": {
+            "type": "array",
+            "description": "A list of paths that your mod uses inside MIO/modconfig. For example, if your mod uses `modconfig/noclip/keybinds.txt`, you would put `\"configFiles\": [\"noclip/keybinds.txt\"]`.",
+            "items": {
+                "type": "string"
+            }
+        },
         "dependencies": {
             "type": "array",
             "description": "A list of the identifiers of mods your mod depends on.",
