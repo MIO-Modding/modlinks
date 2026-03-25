@@ -6,12 +6,12 @@
   "type": "array",
   "items": {
     "type":"object",
-    "required": ["id", "titleSlug", "displayTitle", "authorSlug", "displayAuthor", "description", "versions", "configFiles", "dependencies"],
+    "required": ["id", "titleSlug", "displayTitle", "authorSlug", "displayAuthor", "description", "versions", "dependencies"],
     "additionalProperties": false,
     "properties": {
         "id": {
             "type": "string",
-            "description": "A UUID used for identifying your mod. You can generate one at https://www.uuidgenerator.net/version4"
+            "description": "An identifier for your mod."
         },
         "titleSlug": {
             "type": "string",
@@ -41,20 +41,13 @@
             "patternProperties": {
                 "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$": {
                     "type": "string",
-                    "description": "URL to the .dll download for your mod."
+                    "description": "URL to the .zip download for your mod."
                 }
-            }
-        },
-        "configFiles": {
-            "type": "array",
-            "description": "A list of paths that your mod uses inside MIO/modconfig. For example, if your mod uses `modconfig/noclip/keybinds.txt`, you would put `\"configFiles\": [\"noclip/keybinds.txt\"]`.",
-            "items": {
-                "type": "string"
             }
         },
         "dependencies": {
             "type": "array",
-            "description": "A list of UUIDs of mods your mod depends on. You don't have to put Modding API.",
+            "description": "A list of the identifiers of mods your mod depends on.",
             "items": {
                 "type": "string"
             }
