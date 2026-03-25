@@ -12,5 +12,23 @@
     },
     "configFiles": [],
     "dependencies": []
+  },
+  {
+    "id": "io.github.ilemni.mio-freecam-mod",
+    "titleSlug": "mio-freecam-mod",
+    "displayTitle": "Freecam Mod",
+    "authorSlug": "Ilemni",
+    "displayAuthor": "Ilemni",
+    "description": "A freecam mod for MIO: Memories in Orbit",
+    "modDirectoryName": "freecam",
+    "versions": {
+      "1.0.0": "https://github.com/Ilemni/mio-freecam-mod/releases/download/v1.0/freecam-mod.zip"
+    },
+    "configFiles": [
+      "keybinds.txt"
+    ],
+    "dependencies": [
+      "io.github.mio-modding.mio-modding-api"
+    ]
   }
 ]
