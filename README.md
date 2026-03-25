@@ -10,6 +10,7 @@ export interface Mod {
   authorSlug: string; // The username slug from the URL of your github account. Used for linking to the repository and your account.
   displayAuthor: string; // How you want your username to be displayed.
   description: string; // A short description of your mod.
+  modDirectoryName: string; // What you want the install and config directories for your mod to be set to. In most cases, this should be the same as the titleSlug field, but it is up to you.
   versions: Versions; // A list of downloads for your mod. See below.
   configFiles: string[]; // A list of paths that your mod uses inside MIO/modconfig. For example, if your mod uses `modconfig/noclip/keybinds.txt`, you would put `"configFiles": ["noclip/keybinds.txt"]`.
   dependencies: string[]; // A list of the identifiers of mods your mod depends on.

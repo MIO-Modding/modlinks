@@ -6,6 +6,7 @@
     "authorSlug": "MIO-Modding",
     "displayAuthor": "MIO Modding",
     "description": "Modding API for MIO: Memories in Orbit",
+    "modDirectoryName": "modding-api",
     "versions": {
       "0.1.0": "https://github.com/MIO-Modding/mio-modding-api/releases/download/0.1.0/mio-modding-api.zip"
     },

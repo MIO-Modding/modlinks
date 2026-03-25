@@ -6,7 +6,7 @@
   "type": "array",
   "items": {
     "type":"object",
-    "required": ["id", "titleSlug", "displayTitle", "authorSlug", "displayAuthor", "description", "versions", "dependencies"],
+    "required": ["id", "titleSlug", "displayTitle", "authorSlug", "displayAuthor", "description", "modDirectoryName", "versions", "dependencies"],
     "additionalProperties": false,
     "properties": {
         "id": {
@@ -32,6 +32,10 @@
         "description": {
             "type": "string",
             "description": "A description of your mod."
+        },
+        "modDirectoryName": {
+            "type": "string",
+            "description": "What you want the install and config directories for your mod to be set to. In most cases, this should be the same as the titleSlug field, but it is up to you."
         },
         "versions": {
             "type": "object",
